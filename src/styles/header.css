@@ -1,0 +1,10 @@
+.navbar {
+	position: relative;
+	z-index: 600;
+	background: linear-gradient(45.36deg, #008bdc -15.63%, #1dc1f6 110.15%);
+	color: white !important;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+	color: white !important;
+}

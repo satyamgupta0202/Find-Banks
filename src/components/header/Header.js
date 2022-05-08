@@ -1,0 +1,27 @@
+import React from "react";
+import { Link } from "react-router-dom";
+import { Nav, Navbar, Container } from "react-bootstrap";
+
+const Header = () => {
+	return (
+		<Navbar collapseOnSelect expand="lg" variant="dark">
+			<Container>
+				<Navbar.Brand>Find Your Bank!</Navbar.Brand>
+				<Navbar.Toggle aria-controls="responsive-navbar-nav" />
+				<Navbar.Collapse id="responsive-navbar-nav">
+					<Nav className="me-auto" />
+					<Nav>
+						<Nav.Link as={Link} to={"/all-banks"}>
+							All Banks
+						</Nav.Link>
+						<Nav.Link as={Link} to={"/favorites"}>
+							Favorites
+						</Nav.Link>
+					</Nav>
+				</Navbar.Collapse>
+			</Container>
+		</Navbar>
+	);
+};
+
+export default React.memo(Header);

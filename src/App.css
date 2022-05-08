@@ -1,0 +1,17 @@
+@import "./styles/loader.css";
+@import "./styles/header.css";
+@import "./styles/showData.css";
+@import "./styles/bankDetails.css";
+@import "./styles/favorites.css";
+
+* {
+	font-family: "Amaranth", sans-serif;
+}
+
+.page-not-found {
+	max-width: 670px;
+	width: 100%;
+	text-align: center;
+	margin: auto;
+	padding: 24px;
+}
